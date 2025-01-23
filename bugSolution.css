@@ -1,0 +1,26 @@
+/* bug.css */
+#container {
+  /* Missing width causes the issue */
+  width: 500px;
+}
+
+#element {
+  width: calc(50% - 10px);
+  background-color: lightblue;
+}
+
+/* bugSolution.css */
+#container {
+  width: 500px; /* Explicit width resolves the issue */
+}
+
+#element {
+  width: calc(50% - 10px);
+  background-color: lightblue;
+}
+
+/*Alternative solution, using only percentages*/
+#element2 {
+  width: 48%; /* Approximate 50% - 10px */
+  background-color: lightgreen;
+} 
