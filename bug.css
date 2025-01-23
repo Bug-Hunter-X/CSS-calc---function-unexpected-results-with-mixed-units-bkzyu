@@ -1,0 +1,1 @@
+The CSS `calc()` function can lead to unexpected results when combined with percentages and units that aren't explicitly defined. For example, using `width: calc(50% - 10px);` might not render as expected in some browsers if the parent element's width is not explicitly set.  The browser might struggle to resolve the percentage before subtracting the pixel value. 
